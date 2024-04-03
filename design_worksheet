@@ -1,0 +1,25 @@
+TODO: (1) Complete this side (partitioning function), implement, & test
+      (2) Complete reverse side (overall program design), implement, & test
+(To print, run 'lpr design_worksheet')
+********************************************************************************
+(1) Board-partitioning function design
+    Reminder: Look at the whole LAB WRITEUP for information on how partitioning
+              should work and suggestions on how to get started.
+Q1: What parameters does this function need and what does it return?  Design 
+    its prototype? 
+    (Pro tip: pass-by-pointer params are a way to "return" multiple values.)
+Q2: What does this function do?  Design your function's high-level control 
+    flow, and then refine in details. 
+Q3: How are you going to test your function's correctness?  What are the 
+    different config and command-line options you want to test?
+
+(2) Overall parallel gol program design
+    Reminder: Look at the LAB WRITEUP to understand requirements & control flow
+Q1: What changes need to be made to main's control flow for pthreads? 
+Q2: What additional state do you need to add to the parallel solution?  
+    New globals or data structures?  Modifications to existing data structures?
+Q3: What changes need to be made to parallelize play_gol?  Design the 
+    high-level control flow of the pthread version of play_gol, and refine as 
+    needed.  Do you need any new helper functions?  Modify existing ones?  
+    Any parts only 1 thread performs?
+Q4: Does your solution need synchronization?  How many and what type?  Where?
